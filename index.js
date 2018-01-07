@@ -33,7 +33,7 @@ if (!cart.length) {
 switch (l) {
   case (l === 1):
     console.log(s + `${cart[0]} at $${cart[0][0]}.`);
-  
+
 
     break;
   //default:
