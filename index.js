@@ -27,7 +27,7 @@ function viewCart() {
   cart;
   let l = cart.length;
   var s = "In your cart, you have "
-while(!cart.lenth){
+if(!cart.lenth){
   switch (l) {
 
     case (l === 1):
