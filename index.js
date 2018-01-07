@@ -25,10 +25,10 @@ function addToCart(item) {
 function viewCart() {
   // write your code here
   cart;
-  let l = cart.length;
+
   var s = "In your cart, you have "
 if (!cart.length) {
-  return "Your shopping cart is empty.";
+  console.log( "Your shopping cart is empty.");
 }
 
 }
