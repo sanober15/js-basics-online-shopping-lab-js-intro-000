@@ -27,28 +27,10 @@ function viewCart() {
   cart;
   let l = cart.length;
   var s = "In your cart, you have "
-if(!cart.lenth){
-  switch (l) {
-
-    case (l === 1):
-      return s += `${cart[0]} at $${cart[0][0]}.`;
-      break;
-
-    case (l >1 ):
-    var c = 1;
-
-      for (var i = 0; i < cart.length; i++ ,  c< l-1) {
-        s += `${cart[i]} at $${cart[i][i]},`
-        c++;
-      }
-      return s += ` and ${cart[l-1]} at $${cart[l-1][l-1]}.`;
-
-      break;
-
-  }
-
+if (!cart.length) {
+  return "Your shopping cart is empty.";
 }
-return "Your shoppping cart is empty.";
+
 }
 
 function total() {
