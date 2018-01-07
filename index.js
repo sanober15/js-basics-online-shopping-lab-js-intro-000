@@ -59,12 +59,39 @@ let itemsAndPrices = [];
 
 function total() {
   // write your code here
+  cart;
+ var t = 0;
+
+  for (var i = 0; i < cart.length; i++) {
+    for (var item in cart[i]) {
+      t += cart[i][item]
+    }
+  }
+  return t;
+
 }
 
 function removeFromCart(item) {
   // write your code here
+  if (cart.length > 0) {
+   for (var i = 0; i < cart.length; i++) {
+     if (cart[i].hasOwnProperty(item)) {
+     cart.splice(i, 1);
+
+ } }} else {
+ console.log("That item is not in your cart.");
+ }
 }
 
 function placeOrder(cardNumber) {
   // write your code here
+  if (cardNumber=== undefined) {
+    console.log("Sorry, we don't have a credit card on file for you.");}
+    else {
+
+    var value = total();
+    console.log(`Your total cost is $${value}, which will be charged to the card ${cardNumber}.`);
+    cart = [];
+    return cart;
+  }
 }
